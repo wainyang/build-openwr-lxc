@@ -14,6 +14,8 @@
 - Fork本仓库-> Actions-> Build OpenWrt-> Run workflow
 
 ### pve8构建lxc openwrt容器
+### pve7.4
+# pct create 105 local:vztmpl/openwrt-x86-64-generic-rootfs.tar.gz --rootfs local-lvm:1 --ostype unmanaged --hostname openwrt-LXC --arch amd64 --cores 1 -memory 2048 --swap 2048 bridge=vmbr0,name=eth0
 - 进入容器,执行命令:
 ```
 pct create xxx \ # xxx容器序号
